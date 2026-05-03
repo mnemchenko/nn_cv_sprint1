@@ -39,8 +39,8 @@ mmdetection/datasets/minecraft/images/
 mmdetection/datasets/minecraft/video.mp4
 mmdetection/datasets/minecraft/*.zip
 
-# Dataset annotations (regenerated from the source archive via convert_coco_to_yolo.py)
-mmdetection/datasets/minecraft/annotations/
+# Annotations: коммитим JSON в datasets/minecraft/annotations/ (исходные COCO, ~1 MB),
+# но игнорируем дубликаты, которые YOLO/конвертеры могли положить рядом с картинками.
 mmdetection/datasets/minecraft/train/annotations.json
 mmdetection/datasets/minecraft/val/annotations.json
 mmdetection/datasets/minecraft/test/annotations.json
@@ -58,3 +58,18 @@ mmdetection/artifacts/videos/*.mp4
 # Auto-created run dirs (ultralytics/mmdet)
 runs/
 wandb/
+
+# Артефакты mmdetection (создаются при работе)
+mmdetection/work_dirs/
+mmdetection/.dev_scripts/
+mmdetection/__pycache__/
+mmdetection/**/__pycache__/
+mmdetection/data/
+mmdetection/outputs/
+
+# Build artifacts (после pip install -e .)
+mmdetection/mmdet.egg-info/
+mmdetection/build/
+
+# Тесты библиотеки — нам не нужны
+mmdetection/tests/

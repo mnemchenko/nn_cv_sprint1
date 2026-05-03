@@ -1,0 +1,60 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Dataset images, labels, video & archive (large files)
+mmdetection/datasets/minecraft/train/*.jpg
+mmdetection/datasets/minecraft/train/*.png
+mmdetection/datasets/minecraft/val/*.jpg
+mmdetection/datasets/minecraft/val/*.png
+mmdetection/datasets/minecraft/test/*.jpg
+mmdetection/datasets/minecraft/test/*.png
+mmdetection/datasets/minecraft/labels/
+mmdetection/datasets/minecraft/images/
+mmdetection/datasets/minecraft/video.mp4
+mmdetection/datasets/minecraft/*.zip
+
+# Dataset annotations (regenerated from the source archive via convert_coco_to_yolo.py)
+mmdetection/datasets/minecraft/annotations/
+mmdetection/datasets/minecraft/train/annotations.json
+mmdetection/datasets/minecraft/val/annotations.json
+mmdetection/datasets/minecraft/test/annotations.json
+
+# Model weights
+mmdetection/checkpoints/
+mmdetection/artifacts/fcos/epoch_*.pth
+mmdetection/artifacts/yolo/train/weights/
+*.pth
+*.pt
+
+# Large artifacts
+mmdetection/artifacts/videos/*.mp4
+
+# Auto-created run dirs (ultralytics/mmdet)
+runs/
+wandb/
